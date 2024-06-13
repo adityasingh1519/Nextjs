@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { resolve } from "path";
+
 //Dynamic metadata 
 type Props = {
   params: {
