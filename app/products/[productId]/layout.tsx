@@ -1,3 +1,12 @@
+import {Metadata} from 'next'
+
+export const metadata : Metadata = {
+    title: {
+        default:'fall back title',
+        template:' %s | template'
+    },
+}
+
 export default function ProductDetailsLayout({
   children,
 }: {

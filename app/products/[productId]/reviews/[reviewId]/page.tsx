@@ -1,5 +1,10 @@
 import { notFound } from "next/navigation";
 
+import {Metadata} from 'next'
+
+export const metadata : Metadata = {
+    title: 'reviews'
+}
 export default function ReviewId({ params }: { params: { reviewId: string } }) {
   if (parseInt(params.reviewId) > 1000) {
     notFound();
