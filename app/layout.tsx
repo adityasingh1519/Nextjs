@@ -109,9 +109,9 @@ export default function RootLayout({
         </header>
         <div className=" max-w-7xl mx-auto">{children}</div>
         <footer className="footer bg-white relative pt-1 border-b-2 border-blue-700 bg-slate-900  ">
-          <div className="container  max-w-7xl mx-auto px-6">
+          <div className="container  max-w-7xl mx-auto">
             <div className="sm:flex sm:mt-8">
-              <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+              <div className="mt-8 sm:mt-0 sm:w-full  flex flex-col md:flex-row justify-between">
                 <div className="flex flex-col">
                   <span className="font-bold text-gray-700 uppercase mb-2">
                     Footer header 1
@@ -202,7 +202,7 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="container  max-w-7xl mx-auto px-6">
+          <div className="container  max-w-7xl mx-auto">
             <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
               <div className="sm:w-2/3 text-center py-6">
                 <p className="text-sm text-blue-700 font-bold mb-2">
