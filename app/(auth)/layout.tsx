@@ -50,4 +50,6 @@ export default function AuthLayout({
 }
 
 
-// template.tsx don't preserve the states and new instant of component is created when user nevigated between routes it recreates the dom
+// template.tsx don't preserve the states and new instant of component is created when user nevigated between routes it recreates the dom  
+
+// both template and layouts can be used once layout renders first and template as  its child 
