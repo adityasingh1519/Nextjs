@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,199 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <h1>Header</h1>
+        <header className="bg-white">
+          <nav
+            className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+            aria-label="Global"
+          >
+            <div className="flex lg:flex-1">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <img
+                  className="h-8 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  alt="Your Company"
+                />
+              </a>
+            </div>
+            <div className="flex lg:hidden">
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="hidden lg:flex lg:gap-x-12">
+              <div className="relative">
+                <button
+                  type="button"
+                  className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                  aria-expanded="false"
+                >
+                  Product
+                  <svg
+                    className="h-5 w-5 flex-none text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Features
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Marketplace
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Company
+              </a>
+            </div>
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Log in <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </nav>
         </header>
-            {children}
-        <footer>
-          <h1>footer</h1>
+        <div className=" max-w-7xl mx-auto">{children}</div>
+        <footer className="footer bg-white relative pt-1 border-b-2 border-blue-700 bg-slate-900  ">
+          <div className="container  max-w-7xl mx-auto px-6">
+            <div className="sm:flex sm:mt-8">
+              <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col">
+                  <span className="font-bold text-gray-700 uppercase mb-2">
+                    Footer header 1
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
+                    Footer header 2
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700 text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700 text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
+                    Footer header 3
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                  <span className="my-2">
+                    <a
+                      href="#"
+                      className="text-blue-700  text-md hover:text-blue-500"
+                    >
+                      link 1
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container  max-w-7xl mx-auto px-6">
+            <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+              <div className="sm:w-2/3 text-center py-6">
+                <p className="text-sm text-blue-700 font-bold mb-2">
+                  © copyright 2024 Aditya Singh
+                </p>
+              </div>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
