@@ -1,16 +1,11 @@
+'use client'
 import { notFound } from "next/navigation";
-
-import {Metadata} from 'next'
-import { error } from "console";
-
 
 function getRandomInt(count : number) : number {
   return Math.floor(Math.random() * count );
 }
 
-export const metadata : Metadata = {
-    title: 'reviews'
-}
+
 export default function ReviewId({ params }: { params: { reviewId: string } }) {
   const random = getRandomInt(3);
 
