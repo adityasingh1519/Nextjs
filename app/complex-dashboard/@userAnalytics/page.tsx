@@ -1,7 +1,3 @@
 export default function UserAnalytics() {
-  return (
-    <>
-      <h1>This is UserAnalytics</h1>
-    </>
-  );
+  return <div> This is UserAnalytics</div>;
 }
