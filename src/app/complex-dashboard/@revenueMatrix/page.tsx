@@ -1,7 +1,8 @@
+import Card from "@/src/components/card";
 export default function RevenueMatrix() {
     return (
       <>
-        <h1>This is RevenueMatrix</h1>
+     <Card>RevenueMatrix</Card>
       </>
     );
   }
