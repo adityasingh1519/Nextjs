@@ -9,6 +9,8 @@ export default function Home() {
         <li><Link className="text-blue-300 underline " href="/products"> Products</Link></li>
         <li><Link className="text-blue-300 underline " href="/order-place"> Order-place</Link></li>
         <li><Link className="text-blue-300 underline " href="/login"> Login</Link></li>
+        <li><Link className="text-blue-300 underline " href="/complex-dashboard"> Complex Dashboard</Link></li>
+        <li><Link className="text-blue-300 underline " href="/f1"> Function One</Link></li>
       </ul>
     </>
   );
