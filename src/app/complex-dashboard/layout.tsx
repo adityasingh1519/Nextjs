@@ -1,18 +1,20 @@
-
 export default function ComplexdashboardLayout({
   children,
   userAnalytics,
   notification,
   revenueMatrix,
+  login,
 }: Readonly<{
   children: React.ReactNode;
   userAnalytics: React.ReactNode;
   notification: React.ReactNode;
   revenueMatrix: React.ReactNode;
+  login: React.ReactNode;
 }>) {
-  return (
+  const isLogin = true;
+  return isLogin? (
     <>
-      <div> {children}</div>
+      <div>This Complex LAYOUT </div>
       <div className="flex flex-row ">
         <div className="basis-1/2">{userAnalytics}</div>
         <div className="basis-1/2 flex flex-col ">
@@ -21,5 +23,7 @@ export default function ComplexdashboardLayout({
         </div>
       </div>
     </>
+  ) : (
+    login
   );
 }
