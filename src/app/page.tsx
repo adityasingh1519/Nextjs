@@ -11,6 +11,8 @@ export default function Home() {
         <li><Link className="text-blue-300 underline " href="/login"> Login</Link></li>
         <li><Link className="text-blue-300 underline " href="/complex-dashboard"> Complex Dashboard</Link></li>
         <li><Link className="text-blue-300 underline " href="/f1"> Function One</Link></li>
+        <li><Link className="text-blue-300 underline " href="/feed"> Feed Images</Link></li>
+
       </ul>
     </>
   );
